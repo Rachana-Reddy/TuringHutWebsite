@@ -113,3 +113,97 @@
         opacity: 0;
     }
 }
+.nav-link {
+    font-family: 'PT Serif', serif;
+    position: relative;
+    display: inline-block;
+    font-size: 20px
+     !important;
+}
+#home, .navbar {
+    /*    background: rgba(159,237,215, 1);*/
+    /*    background: rgba(58,167,169, 1);*/
+    /*    background: rgba(46,156,202, 1);*/
+    /*     background: rgba(87,188,144, 1); --1*/
+        background: rgba(119,201,212, 1); 
+    /*    background-image: linear-gradient(to top, #77c9d4, #65c7c8, #58c4b9, #53c0a6, #57bc90);*/
+    
+    }
+    
+    .fixed-top {
+        -webkit-transition: all 0.2s ease;
+        -moz-transition: all 0.2s ease;
+        -o-transition: all 0.2s ease;
+        transition: all 0.2s ease;
+    }
+    
+    .text-bold {
+        font-weight: bold !important;
+    }
+    
+    .fit {
+        object-fit: scale-down !important;
+    }
+    
+    .navbar-brand {
+        font-family: 'PT Serif', serif;
+    }
+    
+    .navbar-brand:hover {
+        color: white;
+    }
+    
+    .underline {
+        border-bottom: white 2px solid;
+        padding-bottom: 5px;
+        margin-bottom: 25px !important;
+    }
+    
+    .v-center {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center;
+        -ms-flex-line-pack: center;
+        align-content: center;
+        -ms-flex-wrap: wrap;
+        flex-wrap: wrap
+    }
+    
+    .non-affix {}
+    
+    .non-affix a {
+        color: #5e6366;
+    }
+    
+    .affix {
+        -webkit-box-shadow: 0px 5px 30px -6px rgba(0, 0, 0, 0.75);
+        -moz-box-shadow: 0px 5px 30px -6px rgba(0, 0, 0, 0.75);
+        box-shadow: 0px 5px 30px -6px rgba(0, 0, 0, 0.75);
+    }
+    
+    .text-white {
+        color: white;
+    }
+    
+    .affix a {
+        color: white;
+    }
+    .nav-link:after {
+      content: '';
+      position: absolute;
+      bottom: -2px;
+      left: 0;
+      width: 0%;
+      border-bottom: 2.5px solid  #5e6366;
+      transition: 0.4s;
+    }
+    .nav-link:hover:after {
+        width: 100%;
+        
+    }
+    .active  {
+      border-bottom: 2px solid  #5e6366;  
+    }
