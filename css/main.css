@@ -1,3 +1,7 @@
+@import url('https://fonts.googleapis.com/css?family=Markazi+Text:600|PT+Serif');
+.markazi-font {
+    font-family: 'Markazi Text', serif;
+}
 .preloader {
     position: fixed;
     top: 0;
@@ -120,13 +124,20 @@
     font-size: 20px
      !important;
 }
+
+h2 {
+    color: #5e6366;
+    text-decoration: none;
+    user-select: none;
+}
 #home, .navbar {
-    /*    background: rgba(159,237,215, 1);*/
-    /*    background: rgba(58,167,169, 1);*/
-    /*    background: rgba(46,156,202, 1);*/
-    /*     background: rgba(87,188,144, 1); --1*/
-        background: rgba(119,201,212, 1); 
-    /*    background-image: linear-gradient(to top, #77c9d4, #65c7c8, #58c4b9, #53c0a6, #57bc90);*/
+ /*        background: rgba(159,237,215, 1);*/
+    background: rgba(119, 201, 212, 1);
+/*    background: #36D1DC;  */
+/*
+background: -webkit-linear-gradient(to left, #5B86E5, #36D1DC);
+background: linear-gradient(to left, #6e7ce9, #36d1dC);
+*/
     
     }
     
@@ -189,7 +200,7 @@
     }
     
     .affix a {
-        color: white;
+        color:#5e6366;
     }
     .nav-link:after {
       content: '';
