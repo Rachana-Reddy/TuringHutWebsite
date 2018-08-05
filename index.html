@@ -1,22 +1,39 @@
-<!doctype html>
-<html class="no-js" lang="zxx">
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
 <head>
-    <meta charset="utf-8">
-    <meta name="author" content="John Doe">
-    <meta name="description" content="">
-    <meta name="keywords" content="vnrvjiet,VNRVJIET,TuringHut,VnrVjiet,VNR,VJIET,VJEC">
-    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <link rel="apple-touch-icon" sizes="57x57" href="images/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="images/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="images/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="images/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="images/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="images/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="images/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="images/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="images/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="images/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="images/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="images/favicon-16x16.png">
+    <link rel="manifest" href="images/manifest.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="images/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
+
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <title>Turing Hut</title>
     <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/hamburger.css">
-    <link rel="stylesheet" href="css/main.css">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
-    
 
+    <link rel="stylesheet" href="css/main.css">
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
 </head>
-<body>
+
+<body id="page-top" data-spy="scroll" data-target=".navbar">
+
     <div class="preloader">
         <div class="sk-folding-cube">
             <div class="sk-cube1 sk-cube"></div>
@@ -25,6 +42,38 @@
             <div class="sk-cube3 sk-cube"></div>
         </div>
     </div>
+
+    <div class="popup-overlay text-v-center text-center" onclick="closeOverlay(event)">
+        <div id="overlay-content-row" class="row">
+            <div class="col-lg-4 col-sm-2 col-1">
+
+            </div>
+            <div class="contact-overlay-content col-lg-4 col-sm-8 col-10 card" onclick="return false;">
+                <h3 id="contact-overlay-heading" class="text-center underline underline-black"></h3>
+                <div class="row">
+                    <div class="col-10">
+                        <h5 id="contact-overlay-contact"></h5>
+                    </div>
+                    <div class="col-2">
+                        <a id="copyIcon" href="#" onclick="copyToClipBoard()">
+                            <i class="material-icons">content_copy</i>
+                        </a>
+                    </div>
+                </div>
+                <div style="margin-top:20px;" class="row">
+                    <div class="col-12">
+                        <button class="btn btn-black mdc-button" onclick="closeOverlay(event)">Close</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-sm-3 col-1">
+
+            </div>
+        </div>
+    </div>
+
+    <div id="snackbar">Copied to clipboard</div>
+
     <div class="navbar navbar-expand-md non-affix fixed-top">
 
         <a class="navbar-brand" href="#page-top">
@@ -56,8 +105,10 @@
                 </li>
             </ul>
         </div>
+
     </div>
-     <section id="home" class="v-center" style="padding-top: 180px; padding-bottom: 180px;">
+
+    <section id="home" class="v-center">
         <div class="container">
             <div class="row">
                 <div class="col-md-8 text-center v-center">
@@ -71,6 +122,7 @@
             </div>
         </div>
     </section>
+
     <section style="width: 100%;  background: white;  padding-top: 30px;" id="aboutus">
         <div class="container">
             <div class="row">
@@ -82,21 +134,23 @@
             <div class="row" style="margin-bottom: 50px;">
                 <img style="height: 100%; width: 100%; object-fit: contain; margin-bottom: 30px;" class="col-md-4 lazy" src="images/vision.png">
                 <div class="col-md-8 v-center">
-                    <div class="AUcontent"><img src="images/left-quote.png" height="20px" ; width="20px" ;> &nbsp;Act as platform of “unity” to promote the 'cause' of Computer Science. Develop a sense of belongingness amongst the pupils in the 'impact' being created by Computer
+                    <div class="AUcontent"><img src="images/left-quote.png" height="20px" ; width="20px" ;> &nbsp;Act as platform of “unity” to promote the `cause` of Computer Science. Develop a sense of belongingness amongst the pupils in the `impact` being created by Computer
                         Science and it’s applied concepts while appreciating its inter-disciplinary nature and recognizing the unique art of developing solutions through mathematical models evolving in scale to the emerging problems of the world today.
                         And help explore knowledge, simulate study and research of and seek opportunities in Computer Science, with special regard given to Programming, as its members pave way for their career into the future. &nbsp; <img src="images/right-quote.png"
                             height="20" ; width="20" ;></div>
                 </div>
             </div>
+
             <div class="row" style="display: flex; flex-direction: row-reverse;">
                 <img style="height: 100%;  width: 100%; object-fit: contain; margin-bottom: 30px;" class="col-md-4 lazy" src="images/mission.png">
                 <div class="col-md-8 v-center">
                     <div class="AUcontent"><img src="images/left-quote.png" height="20px" ; width="20px" ;> &nbsp;The club shall work towards promoting the greater cause of Computer Science in the community by Orienting freshmen to the nature of Computer Science, organizing
                         events, Creating awareness about the opportunities to expand their knowledge and showcase their skills. Uniting people with motivated interest to foster a culture of learning in the community with regards to Computer Science. Organizing
                         Programming events at various tiers as deemed necessary on a continuous basis for all its members while training them in the underlying concepts, best coding practices and ethics; with an ultimate goal of promoting Competitive
-                        Programming under the motto 'Programming as a Sport' and 'The Art of Programming'. &nbsp; <img src="images/right-quote.png" height="20" ; width="20" ;></div>
+                        Programming under the motto `Programming as a Sport` and `The Art of Programming`. &nbsp; <img src="images/right-quote.png" height="20" ; width="20" ;></div>
                 </div>
             </div>
+
             <div class="row stats">
                 <div class="col-12 col-md-6 col-lg-3 text-center stats_col">
                     <div class="stats_count">72</div>
@@ -117,6 +171,7 @@
             </div>
         </div>
     </section>
+
     <section style="width: 100%;" id="team">
         <div class="container">
             <div class="row">
@@ -343,10 +398,12 @@
                     </div>
                 </div>
                 <div class="col-lg-3">
+
                 </div>
             </div>
         </div>
     </section>
+
     <section style="width: 100%; background:rgba(119,201,212, 1); color:white" id="contact">
         <div class="container">
             <div class="row">
@@ -393,17 +450,32 @@
             </div>
         </div>
     </section>
-    <footer class="container-fluid text-center page-footer font-small mdb-color lighten-3 pt-4 mt-4" style="margin: 0; padding: 0;" id="footer">
-        <div style="background: rgba(119,201,212, 1); color: #5e6366; margin-top: 0" class="row">
+
+    <footer class="container-fluid text-center page-footer font-small mdb-color lighten-3 pt-4 mt-4" id="footer">
+        <div class="row">
+            <div class="col-12">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d951.0921901706622!2d78.3842943880674!3d17.53762127801508!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bcb8e0aaf93a48b%3A0xd614e09fb5ec1d4a!2sPatrons+Bhavan!5e0!3m2!1sen!2sin!4v1531936524603"
+                    width="100%" height="300" frameborder="0" style="border:0" allowfullscreen></iframe>
+            </div>
+        </div>
+        <div style="background: rgba(119,201,212, 1); margin-right: 0px; color: #5e6366;" class="row">
             <div style="padding-top: 20px; padding-bottom: 20px;" class="col-12">
                 <h3 style="margin:0!important;padding: 0!important;color: #5e6366;">Developed by Turing Hut</h3>
             </div>
         </div>
     </footer>
+
     <script src="js/jquery.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
+    <script src="js/lazyload.js"></script>
+    <script>
+        new LazyLoad({
+            elements_selector: ".lazy"
+        });
+    </script>
     <script src="js/footer-reveal.min.js"></script>
-     <script src="js/waypoint.js"></script>
+    <script src="js/waypoint.js"></script>
     <script src="js/main.js"></script>
 </body>
+
 </html>
